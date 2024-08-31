@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <div class="navbar-brand">Gustavo Fonseca</div>
+        <div class="navbar-brand-2">RA:52318350</div>
+        <ul class="navbar-menu">
+            <li><a href="#topo">Menu</a></li>
+            <li><a href="#conhecimentos">Conhecimentos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção de topo -->
+    <section id="topo" class="section">
+        <h1>Bem-vindo ao meu portfólio</h1>
+    </section>
+
+    <!-- Seção de conhecimentos -->
+    <section id="conhecimentos" class="section">
+        <h2>Conhecimentos</h2>
+        <div class="knowledge-grid">
+            <div class="knowledge-item html"><img src="html.png" alt="HTML"></div>
+            <div class="knowledge-item css"><img src="css.png" alt="CSS"></div>
+            <div class="knowledge-item js"><img src="js.png" alt="JavaScript"></div>
+            <div class="knowledge-item scss"><img src="scss.png" alt="SCSS"></div>
+            <div class="knowledge-item cpp"><img src="cpp.png" alt="C++"></div>
+            <div class="knowledge-item python"><img src="python.png" alt="Python"></div>
+            <div class="knowledge-item angular"><img src="angular.png" alt="Angular"></div>
+            <div class="knowledge-item typescript"><img src="typescript.png" alt="TypeScript"></div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

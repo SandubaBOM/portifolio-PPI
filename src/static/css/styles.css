@@ -100,17 +100,17 @@ body {
   color: #00aaff; /* Cor dos ícones */
 }
 
-.sobre-item:nth-child(2) i {
-  margin-left: -4px; 
-  font-size: 1.88em;
-}
-
 .sobre-item p {
   font-size: 1.1em;
   line-height: 1.6;
   color: #ddd;
   margin: 0;
 }
+.sobre-item:nth-child(2) i {
+  margin-left: -4px; 
+  font-size: 1.88em;
+}
+
 
 /* Experiencia*/
 

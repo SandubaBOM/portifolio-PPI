@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     
@@ -59,11 +59,12 @@
     <section id="exp">
         <h2>Experiências Profissionais</h2>
         <div class="button-container">
-            <button type="button" class="experience-button">
+            <button type="button" class="experience-button" onclick="window.location.href='{{ url_for('pagina_experiencias') }}'">
                 <i class="fa-solid fa-briefcase"></i> Experiências
             </button>
         </div>
     </section>
+    
     
     
     
@@ -97,8 +98,8 @@
     <footer class="footer">
         <p>&copy; 2024 Gustavo Fonseca. Todos os direitos reservados.</p>
         <p>Conecte-se comigo: 
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gustavo-fonseca-59602a282/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/SandubaBOM" target="_blank"><i class="fab fa-github"></i></a>
         </p>
     </footer>
 

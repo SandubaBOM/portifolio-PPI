@@ -12,6 +12,10 @@ def index():
 def home():
     return render_template('index.html')
 
+@app.route('/experiencias')
+def pagina_experiencias():
+    return render_template('experiencias.html')
+
 if __name__ == '__main__':
     # Executa o aplicativo Flask com o modo de depuração ativado
     app.run(debug=True)

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/exp.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+
+
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <div class="navbar-section navbar-left">
+            <div class="navbar-brand"><i class="fas fa-user"></i> Gustavo Fonseca</div>
+        </div>
+        <div class="navbar-section navbar-center">
+            <div class="navbar-brand-2"><i class="fas fa-id-badge"></i> RA: 52318350</div>
+        </div>
+        <div class="navbar-section navbar-right">
+            <ul class="navbar-menu">
+                <li><a href="{{url_for('home')}}"><i class="fas fa-home"></i> Menu</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+
+    <section id="experiencias">
+        <h2>Experiências de Trabalho</h2>
+        <div class="experiencias-content">
+            
+            <div class="experiencia-container">
+                <div class="experiencia-header">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <strong>ITShare LTA</strong>
+                </div>
+                <div class="experiencia-item">
+                    <div class="content-wrapper">
+                        <div class="content-item">
+                            <i class="fa-brands fa-linux"></i>
+                            <p>Pude aprender a mexer com a linguagem Linux e muitos de seus comandos.</p>
+                        </div>
+                        <div class="content-item">
+                            <i class="fa-solid fa-server"></i>
+                            <p>Fui ensinado a usar o sistema Zabbix e o Grafana para monitoramento de servidores.</p>
+                        </div>
+                        <div class="content-item">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p>Estou 7 meses na empresa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Experiência KPeyes -->
+            <div class="experiencia-container">
+                <div class="experiencia-header">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <strong>KPeyes</strong>
+                </div>
+                <div class="experiencia-item">
+                    <div class="content-wrapper">
+                        <div class="content-item">
+                            <i class="fa-solid fa-code"></i>
+                            <p>Aprendi a mexer com Angular (Framework) e SCSS.</p>
+                        </div>
+                        <div class="content-item">
+                            <i class="fa-solid fa-tasks"></i>
+                            <p>Trabalhei em projetos de empresas grandes como BK e Mac.</p>
+                        </div>
+                        <div class="content-item">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p>Estou a 3 meses na empresa e planejo ficar um bom tempo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    
+    
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Gustavo Fonseca. Todos os direitos reservados.</p>
+    <p>Conecte-se comigo: 
+        <a href="https://www.linkedin.com/in/gustavo-fonseca-59602a282/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/SandubaBOM" target="_blank"><i class="fab fa-github"></i></a>
+    </p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>

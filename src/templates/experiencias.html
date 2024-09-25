@@ -8,34 +8,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/exp.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    
-
-
 </head>
 <body>
     <!-- Barra de navegação -->
     <nav class="navbar">
-        <div class="navbar-section navbar-left">
-            <div class="navbar-brand"><i class="fas fa-user"></i> Gustavo Fonseca</div>
-        </div>
-        <div class="navbar-section navbar-center">
-            <div class="navbar-brand-2"><i class="fas fa-id-badge"></i> RA: 52318350</div>
-        </div>
-        <div class="navbar-section navbar-right">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Minhas Experiencias</a>
             <ul class="navbar-menu">
-                <li><a href="{{url_for('home')}}"><i class="fas fa-home"></i> Menu</a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="{{url_for('index')}}">Conhecimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
+            <div class="navbar-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
         </div>
     </nav>
     
 
-
+    <!-- Seção Sobre Mim -->
+    <section id="sobre">
+        <div class="sobre-container">
+            <h2>Sobre Mim</h2>
+            <p>Sou Gustavo Fonseca, estudante de tecnologia e entusiasta de desenvolvimento web. Atualmente, tenho focado em melhorar minhas habilidades com frameworks modernos como Angular, bem como explorar novas áreas em monitoramento de servidores utilizando ferramentas como Zabbix e Grafana.</p>
+            <p>Além disso, possuo interesse em otimizar a eficiência de sistemas baseados em Linux, colaborando com empresas para desenvolver soluções robustas e escaláveis.</p>
+        </div>
+    </section>
 
     <section id="experiencias">
         <h2>Experiências de Trabalho</h2>
         <div class="experiencias-content">
-            
+            <!-- ITShare LTA -->
             <div class="experiencia-container">
                 <div class="experiencia-header">
                     <i class="fa-solid fa-briefcase"></i>
@@ -53,13 +58,13 @@
                         </div>
                         <div class="content-item">
                             <i class="fa-solid fa-calendar-days"></i>
-                            <p>Estou 7 meses na empresa.</p>
+                            <p>Estou há 7 meses na empresa.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Experiência KPeyes -->
+    
+            <!-- KPeyes -->
             <div class="experiencia-container">
                 <div class="experiencia-header">
                     <i class="fa-solid fa-briefcase"></i>
@@ -77,32 +82,35 @@
                         </div>
                         <div class="content-item">
                             <i class="fa-solid fa-calendar-days"></i>
-                            <p>Estou a 3 meses na empresa e planejo ficar um bom tempo.</p>
+                            <p>Estou há 3 meses na empresa e planejo ficar um bom tempo.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
     
-    
 
-
-
-
-
-
-
-<!-- Footer -->
-<footer class="footer">
-    <p>&copy; 2024 Gustavo Fonseca. Todos os direitos reservados.</p>
-    <p>Conecte-se comigo: 
-        <a href="https://www.linkedin.com/in/gustavo-fonseca-59602a282/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <p>&copy; 2024 Gustavo Fonseca. Todos os direitos reservados.</p>
+        <p>Conecte-se comigo: 
+            <a href="https://www.linkedin.com/in/gustavo-fonseca-59602a282/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/SandubaBOM" target="_blank"><i class="fab fa-github"></i></a>
-    </p>
-</footer>
+        </p>
+    </footer>
 
-<script src="scripts.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButton = document.querySelector('.navbar-toggle');
+            const navbarMenu = document.querySelector('.navbar-menu');
+    
+            toggleButton.addEventListener('click', function() {
+                navbarMenu.classList.toggle('active');
+            });
+        });
+    </script>
+    
 </body>
+</html>
